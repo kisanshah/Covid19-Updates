@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".State">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/state"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    tools:ignore="PrivateResource" />
+
+                <TextView
+                    android:id="@+id/cases"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/total_cases"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    tools:ignore="PrivateResource" />
+
+                <TextView
+                    android:id="@+id/active"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/total_active"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    tools:ignore="PrivateResource" />
+
+                <TextView
+                    android:id="@+id/deaths"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/total_deaths"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    tools:ignore="PrivateResource" />
+
+                <TextView
+                    android:id="@+id/recovered"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/recovered"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    tools:ignore="PrivateResource" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

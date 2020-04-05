@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Global">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="@string/coronavirus_cases"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/totalCases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="35sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="@string/deaths"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/totalDeaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="35sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="@string/recovered"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/totalRecovered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:textSize="35sp" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_bg">
+
+                <TextView
+                    android:id="@+id/TV2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/active_cases"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp"
+                    tools:ignore="PrivateResource" />
+
+                <TextView
+                    android:id="@+id/totalActive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TV2"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25sp"
+                    tools:ignore="PrivateResource" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalActive"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/currently_infected_patients"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="22sp"
+                    tools:ignore="PrivateResource" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_bg">
+
+                <TextView
+                    android:id="@+id/TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/closed_cases"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30sp"
+                    tools:ignore="PrivateResource" />
+
+                <TextView
+                    android:id="@+id/totalClosed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TV"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="25sp"
+                    tools:ignore="PrivateResource" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TV3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/recovered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="25sp"
+                        tools:ignore="PrivateResource" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:text="@string/recovered_discharged"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="17sp"
+                        tools:ignore="PrivateResource" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TV3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    tools:ignore="RelativeOverlap">
+
+                    <TextView
+                        android:id="@+id/deaths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="25sp"
+                        tools:ignore="PrivateResource" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="@string/deaths"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="17sp"
+                        tools:ignore="PrivateResource" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/TV3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalClosed"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/cases_which_had_an_outcome"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="22sp"
+                    tools:ignore="PrivateResource" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
