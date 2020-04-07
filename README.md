@@ -11,3 +11,4 @@ You can even search with country name.
 3. State list
 > In this the list of State of india are listed with the update on corona virus pandemic.
 # API used in this project
+https://github.com/amodm/api-covid19-in
